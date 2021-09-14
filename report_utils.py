@@ -58,7 +58,7 @@ def calc_independent_loglikelihood_var(variable, avg, std):
 
 def calc_cond_prob_one_var(y, x):
     sq_temp = np.dot(x, np.vstack(x))
-    print(sq_temp)
+    print("testing",sq_temp)
     l1 = [len(x) , np.sum(x)]
     l2 = [np.sum(x), sq_temp]
     A = np.vstack([l1, l2])
